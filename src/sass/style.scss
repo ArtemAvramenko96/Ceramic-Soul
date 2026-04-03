@@ -1,0 +1,17 @@
+@use "/src/sass/libs/modern-normalize.min.css";
+@use "/src/sass/libs/fontello.css";
+@use "/src/sass/base/basic.scss";
+
+@use "/src/sass/base/variables.scss" as *;
+// @use "/src/sass/pxtorem.scss" as *;
+
+//titles UI
+@use "/src/sass/ui/titles.scss";
+//buttons UI
+@use "/src/sass/ui/buttons.scss";
+
+//header
+@use "/src/sass/blocks/header.scss";
+
+//promo section
+@use "/src/sass/blocks/promo.scss";
