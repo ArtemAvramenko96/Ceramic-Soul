@@ -1,4 +1,6 @@
 @use "/src/sass/libs/modern-normalize.min.css";
+@use "/src/sass/libs/grids-min.css";
+@use "/src/sass/libs/grids-responsive-min.css";
 @use "/src/sass/libs/fontello.css";
 @use "/src/sass/base/basic.scss";
 
@@ -9,9 +11,18 @@
 @use "/src/sass/ui/titles.scss";
 //buttons UI
 @use "/src/sass/ui/buttons.scss";
+//form
+@use "/src/sass/ui/form.scss";
+
 
 //header
 @use "/src/sass/blocks/header.scss";
 
 //promo section
 @use "/src/sass/blocks/promo.scss";
+
+//activities section
+@use "/src/sass/blocks/activities.scss";
+
+//contact section
+@use "/src/sass/blocks/touch.scss";
