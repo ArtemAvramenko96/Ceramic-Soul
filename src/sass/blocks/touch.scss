@@ -1,3 +1,5 @@
+@use "/src/sass/base/variables.scss" as *;
+
 .touch {
     padding-top: 60px;
 
@@ -8,10 +10,123 @@
     &__img {
         display: none;
     }
+
+    &__fieldset {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__label {
+        display: block;
+        color: $dark;
+        font-size: 14px;
+        line-height: 28px;
+
+        &:nth-child(2) {
+            margin-top: 8px;
+        }
+    }
+
+    &__input {
+        padding: 10px 15px;
+        width: 100%;
+        height: 48px;
+        color: $dark;
+        border-radius: 2px;
+        border: 1px solid rgba(226, 225, 229, 1);
+        background: #fff;
+
+        &:focus {
+            border: none;
+            outline: 1px solid $dark;
+        }
+
+        &::placeholder {
+            color: $ui-disabled;
+        }
+    }
+
+    &__textarea {
+        padding: 10px 15px;
+        width: 100%;
+        height: 132px;
+        color: $dark;
+        border-radius: 2px;
+        border: 1px solid rgba(226, 225, 229, 1);
+        background: #fff;
+        resize: none;
+
+        &:focus {
+            border: none;
+            outline: 1px solid $dark;
+        }
+
+        &::placeholder {
+            color: $ui-disabled;
+        }
+    }
+
+    &__check-block {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        a {
+            color: rgba(162, 45, 198, 1);
+            text-decoration: none;
+            margin-left: 2px;
+        }
+    }
+
+    &__checkbox {
+        margin-right: 15px;
+        width: 15px;
+        height: 15px;
+    }
+
+    &__btn {
+        margin-top: 20px;
+    }
+
+    &__vase {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .touch {
+        &__wrapper {
+            margin-top: 45px;
+            position: relative;
+        }
+
+        &__input {
+            width: 300px;
+        }
+
+        &__textarea {
+            width: 300px;
+        }
+
+        &__vase {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 85px;
+            height: 85px;
+            object-fit: cover;
+        }
+    }
 }
 
 @media screen and (min-width: 1200px) {
     .touch {
+        &__right-block {
+            padding-left: 40px;
+        }
+
         &__img {
             display: block;
             width: 550px;
@@ -19,11 +134,27 @@
             object-fit: cover;
             box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
         }
+
+        &__input {
+            &:hover {
+                border: none;
+                outline: 1px solid $dark;
+            }
+        }
     }
 }
 
 @media screen and (min-width: 1920px) {
     .touch {
+        &__right-block {
+            padding-left: 147px;
+        }
+
+        &__fieldset {
+            display: flex;
+            gap: 45px;
+        }
+
         &__img {
             width: 100%;
             height: 356px;
