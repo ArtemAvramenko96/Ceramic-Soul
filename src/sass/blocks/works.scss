@@ -2,7 +2,11 @@
 
 .works {
     padding-top: 60px;
-    padding-bottom: 35px;
+    padding-bottom: 60px;
+
+    &__wrapper {
+        position: relative;
+    }
 
     &__slider {
         margin-top: 40px;

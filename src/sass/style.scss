@@ -17,6 +17,10 @@
 
 //header
 @use "/src/sass/blocks/header.scss";
+//footer section
+@use "/src/sass/blocks/footer.scss";
+
+
 
 //promo section
 @use "/src/sass/blocks/promo.scss";
@@ -30,5 +34,7 @@
 //works section
 @use "/src/sass/blocks/works.scss";
 
-//footer section
-@use "/src/sass/blocks/footer.scss";
+
+
+//catalog page
+@use "/src/sass/blocks/catalog.scss";
